@@ -11,6 +11,10 @@
                 width: auto;
                 height: auto;
             }
+
+            textarea {
+                vertical-align: middle;
+            }
         </style>
     </head>
     <body>
@@ -19,19 +23,20 @@
 
         <div align="right">
             <a href="index.html">HOME</a> &nbsp; &nbsp; &nbsp;
-            <a href="contact.html">CONTACT US</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       
+            <a href="contact.htm">CONTACT US</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       
         </div>
 
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <div align="middle" style="color: rgb(135, 44, 153); font-family:verdana; font-size: 40px;"><b>CELEBRATE YOU LEISURE DAYS WITH US</b></div>
-        <br><br><br>
-        <div align="middle" style="color: black; font-family:verdana; font-size: 20px;"><b>AFFORDABLE STARTING PACKAGES (STARTING FROM 1000)</b></div>
-        <br><br><br>
         <div align="middle">
-            <b>
-            <a href="https://google.com">GET STARTED</a> &nbsp; &nbsp; &nbsp; &nbsp;
-            <a href="https://google.com">SUBSCRIBE US</a>
-            </b>       
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" id="email"><br><br><br>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="25" rows="3"></textarea><br><br><br>
+                <input type="submit" value="submit">
+            </form>
         </div>
 
     </body>
