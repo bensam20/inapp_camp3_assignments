@@ -8,31 +8,31 @@
         <table>
             <tr>
                 <td><input type="button" value="c" class="field" onclick="reset()"></td>
-                <td colspan="3" id="result"><p id="resprint"></p></td>
+                <td colspan="3" id="result"><input type="text" id="resprint"></td>
             </tr>
             <tr>
-                <td><input type="button" value="+" class="field" onclick="btnPress"></td>
-                <td><input type="button" value="1" class="field" onclick="btnPress"></td>
-                <td><input type="button" value="2" class="field" onclick="btnPress"></td>
-                <td><input type="button" value="3" class="field" onclick="btnPress"></td>
+                <td><input type="button" value="+" class="field" onclick="btnPress('+')"></td>
+                <td><input type="button" value="1" class="field" onclick="btnPress('1')"></td>
+                <td><input type="button" value="2" class="field" onclick="btnPress('2')"></td>
+                <td><input type="button" value="3" class="field" onclick="btnPress('3')"></td>
             </tr>
             <tr>
-                <td><input type="button" value="-" class="field" onclick="btnPress"></td>
-                <td><input type="button" value="4" class="field" onclick="btnPress"></td>
-                <td><input type="button" value="5" class="field" onclick="btnPress"></td>
-                <td><input type="button" value="6" class="field"onclick="btnPress"></td>
+                <td><input type="button" value="-" class="field" onclick="btnPress('-')"></td>
+                <td><input type="button" value="4" class="field" onclick="btnPress('4')"></td>
+                <td><input type="button" value="5" class="field" onclick="btnPress('5')"></td>
+                <td><input type="button" value="6" class="field" onclick="btnPress('6')"></td>
             </tr>
             <tr>
-                <td><input type="button" value="*" class="field" onclick="btnPress"></td>
-                <td><input type="button" value="7" class="field" onclick="btnPress"></td>
-                <td><input type="button" value="8" class="field" onclick="btnPress"></td>
-                <td><input type="button" value="9" class="field" onclick="btnPress"></td>
+                <td><input type="button" value="*" class="field" onclick="btnPress('*')"></td>
+                <td><input type="button" value="7" class="field" onclick="btnPress('7')"></td>
+                <td><input type="button" value="8" class="field" onclick="btnPress('8')"></td>
+                <td><input type="button" value="9" class="field" onclick="btnPress('9')"></td>
             </tr>
             <tr>
-                <td><input type="button" value="/" class="field" onclick="btnPress"></td>
-                <td><input type="button" value="." class="field" onclick="btnPress"></td>
-                <td><input type="button" value="0" class="field" onclick="btnPress"></td>
-                <td><input type="button" value="=" class="field" onclick="btnPress"></td>
+                <td><input type="button" value="/" class="field" onclick="btnPress('/')"></td>
+                <td><input type="button" value="." class="field" onclick="btnPress('.')"></td>
+                <td><input type="button" value="0" class="field" onclick="btnPress('0')"></td>
+                <td><input type="button" value="=" class="field" onclick="caculate()"></td>
             </tr>
         </table>
     </body>

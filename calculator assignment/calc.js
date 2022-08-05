@@ -1,7 +1,11 @@
 function reset(){
-    resprint.innerHTML = ""
+    document.getElementById('resprint').value = "";
 }
 
-function btnPress(){
-    resprint.value = document.getElementsByClassName('field').value;
+function btnPress(val){
+    document.getElementById("resprint").value += val;
+}
+
+function calculate() {
+    document.getElementById("resprint").value = eval(resprint.value)
 }
