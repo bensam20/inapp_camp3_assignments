@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="calc.js"></script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td><input type="button" value="c" class="field" onclick="reset()"></td>
+                <td colspan="3" id="result"><p id="resprint"></p></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="+" class="field" onclick="btnPress"></td>
+                <td><input type="button" value="1" class="field" onclick="btnPress"></td>
+                <td><input type="button" value="2" class="field" onclick="btnPress"></td>
+                <td><input type="button" value="3" class="field" onclick="btnPress"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="-" class="field" onclick="btnPress"></td>
+                <td><input type="button" value="4" class="field" onclick="btnPress"></td>
+                <td><input type="button" value="5" class="field" onclick="btnPress"></td>
+                <td><input type="button" value="6" class="field"onclick="btnPress"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="*" class="field" onclick="btnPress"></td>
+                <td><input type="button" value="7" class="field" onclick="btnPress"></td>
+                <td><input type="button" value="8" class="field" onclick="btnPress"></td>
+                <td><input type="button" value="9" class="field" onclick="btnPress"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="/" class="field" onclick="btnPress"></td>
+                <td><input type="button" value="." class="field" onclick="btnPress"></td>
+                <td><input type="button" value="0" class="field" onclick="btnPress"></td>
+                <td><input type="button" value="=" class="field" onclick="btnPress"></td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+table{
+    border-style: solid;
+    border-color: black;
+    width: 500px;
+    height: 400px;
+}
+
+.field:hover{
+    background-color: aquamarine;
+}
+
+td {
+    width:100px;
+}
+
+.field{
+    height: 100px;
+    width:100%;
+    background-color: rgb(32, 96, 151);
+    font-size: 30px;
+}
+
+#result {
+    border-style: solid;
+    background-color: rgb(59, 167, 161);
+    font-size: 35px;
+    text-align: right;
+    padding: 10px;
+}
