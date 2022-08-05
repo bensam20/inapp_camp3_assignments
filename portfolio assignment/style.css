@@ -37,6 +37,8 @@ a {
     margin-left: 300px;
     margin-top: 300px;
     padding: 20px;
+    margin-right: 100px;
+    color: #4e064e;
 }
 
 #maincontainer img{
@@ -48,6 +50,7 @@ a {
 
 #para3{
     clear: left;
+    font-size: larger;
     padding-top: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -58,3 +61,20 @@ a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-top: 35px;
 }
+
+#cont_container {
+    background-color: rgb(255, 115, 0);
+    margin-left: 300px;
+    margin-top: 300px;
+    padding: 20px;
+    margin-right: 100px;
+    color: #4e064e;
+    padding-left: 50px;
+}
+
+#detailsinput{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
