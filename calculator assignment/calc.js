@@ -7,5 +7,6 @@ function btnPress(val){
 }
 
 function calculate() {
-    document.getElementById("resprint").value = eval(resprint.value)
+    let result = eval(document.getElementById("resprint").value);
+    document.getElementById("resprint").value = result;
 }
