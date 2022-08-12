@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <h1>My Fedback Form</h1>
+        <form enctype="multipart/form-data" action="form_assignment.py" method="post">
+            <ul>
+                <li>Name: <input type="text" name="name"></li>
+                <li>Email: <input type="text" name="email"></li>
+                <li>Password: <input type="text" name="password"></li><br>
+                <li>Please check all the emotions that apply to you:
+                    <ul>
+                        <li>Angry <input type="checkbox" name="emotion" value="angry"></li>
+                        <li>Sad <input type="checkbox" name="emotion" value="sad"></li>
+                        <li>Happy <input type="checkbox" name="emotion" value="happy"></li>
+                        <li>Ambivalent <input type="checkbox" name="emotion" vlue="ambivalent"></li>
+                    </ul>
+                </li>
+                <li>How satisfied were you with our service?
+                    <ul>
+                        <li>Very satisfied <input type="radio" name="satisfaction" value="Very satisfied"></li>
+                        <li>Satisfied <input type="radio" name="satisfaction" value="Satisfied"></li>
+                        <li>Didn't care <input type="radio" name="satisfaction" value="Didn't care"></li>
+                        <li>Dissatisfied <input type="radio" name="satisfaction" value="Dissatisfied"></li>
+                        <li>Very dissatisfied <input type="radio" name="satisfaction" value="Very dissatisfied"></li>
+                    </ul>
+                </li>
+                <li>Further comments: <textarea name="comments" cols="30" rows="10"></textarea></li>
+                <li>Bio Photo <input type="file" name="photo"></li>
+                <li>Location visited: <select name="locvisited">
+                        <option value="tvm">TVM</option>
+                        <option value="ekm">EKM</option>
+                        <option value="kzk">KZK</option>
+                    </select>
+                </li>
+            </ul>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
