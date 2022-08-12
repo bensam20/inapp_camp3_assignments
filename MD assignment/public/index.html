@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="bundle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <body>
+
+    <header class="mdc-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
+            <span class="mdc-top-app-bar__title">Page title</span>
+          </section>
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+            <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Favorite">favorite</button>
+            <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search">search</button>
+            <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Options">more_vert</button>
+          </section>
+        </div>
+    </header>
+
+    <!-- <button class="foo-button mdc-button">
+        <div class="mdc-button__ripple"></div>
+        <span class="mdc-button__label">Button</span>
+    </button> -->
+
+    <br><br><br><br><br><br><br>
+    <!-- for data table -->
+    <div class="mdc-data-table">
+        <div class="mdc-data-table__table-container">
+          <table class="mdc-data-table__table" aria-label="Dessert calories">
+            <thead>
+              <tr class="mdc-data-table__header-row">
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Dessert</th>
+                <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Carbs (g)</th>
+                <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Protein (g)</th>
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Comments</th>
+              </tr>
+            </thead>
+            <tbody class="mdc-data-table__content">
+              <tr class="mdc-data-table__row">
+                <th class="mdc-data-table__cell" scope="row">Frozen yogurt</th>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">24</td>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">4.0</td>
+                <td class="mdc-data-table__cell">Super tasty</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <th class="mdc-data-table__cell" scope="row">Ice cream sandwich</th>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">37</td>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">4.33333333333</td>
+                <td class="mdc-data-table__cell">I like ice cream more</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <th class="mdc-data-table__cell" scope="row">Eclair</th>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">24</td>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">6.0</td>
+                <td class="mdc-data-table__cell">New filing flavor</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      
+      <!-- dialog box -->
+      <div class="mdc-dialog">
+        <div class="mdc-dialog__container">
+          <div class="mdc-dialog__surface"
+            role="alertdialog"
+            aria-modal="true"
+            aria-labelledby="my-dialog-title"
+            aria-describedby="my-dialog-content">
+            <div class="mdc-dialog__content" id="my-dialog-content">
+              Discard draft?
+            </div>
+            <div class="mdc-dialog__actions">
+              <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="cancel">
+                <div class="mdc-button__ripple"></div>
+                <span class="mdc-button__label">Cancel</span>
+              </button>
+              <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="discard">
+                <div class="mdc-button__ripple"></div>
+                <span class="mdc-button__label">Discard</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="mdc-dialog__scrim"></div>
+      </div>
+
+
+      <br><br>
+      <!-- image list -->
+      <ul class="mdc-image-list my-image-list">
+        <li class="mdc-image-list__item">
+          <div class="mdc-image-list__image-aspect-container">
+            <img class="mdc-image-list__image" src="images/frontimg.jfif">
+          </div>
+          <div class="mdc-image-list__supporting">
+            <span class="mdc-image-list__label">Cool Cat</span>
+          </div>
+        </li>
+        <li class="mdc-image-list__item">
+            <div class="mdc-image-list__image-aspect-container">
+              <img class="mdc-image-list__image" src="images/beach.jpg">
+            </div>
+            <div class="mdc-image-list__supporting">
+              <span class="mdc-image-list__label">Beach</span>
+            </div>
+          </li>
+      </ul>
+
+
+      <!-- list -->
+      <ul class="mdc-list mdc-list--two-line">
+        <li class="mdc-list-item" tabindex="0">
+          <span class="mdc-list-item__ripple"></span>
+          <span class="mdc-list-item__text">
+            <span class="mdc-list-item__primary-text">Two-line item</span>
+            <span class="mdc-list-item__secondary-text">Secondary text</span>
+          </span>
+        </li>
+        <li class="mdc-list-item">
+          <span class="mdc-list-item__ripple"></span>
+          <span class="mdc-list-item__text">
+            <span class="mdc-list-item__primary-text">Two-line item</span>
+            <span class="mdc-list-item__secondary-text">Secondary text</span>
+          </span>
+        </li>
+        <li class="mdc-list-item">
+          <span class="mdc-list-item__ripple"></span>
+          <span class="mdc-list-item__text">
+            <span class="mdc-list-item__primary-text">Two-line item</span>
+            <span class="mdc-list-item__secondary-text">Secondary text</span>
+          </span>
+        </li>
+      </ul>
+
+
+      <!-- menus -->
+      <div class="mdc-menu mdc-menu-surface">
+        <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
+          <li class="mdc-list-item" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">A Menu Item</span>
+          </li>
+          <li class="mdc-list-item" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Another Menu Item</span>
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- card -->
+      <div class="mdc-card mdc-card--outlined">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quo sint reiciendis, iste iure impedit, aspernatur corporis fuga at voluptatum animi. Provident autem expedita, nemo possimus quibusdam tenetur modi cumque!
+      </div>
+      <br>
+      <div class="mdc-card mdc-card--outlined">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quis, eos facere nobis vitae quam sit numquam libero temporibus vel exercitationem aperiam consequuntur, voluptatem deserunt sed tempora eveniet neque recusandae.
+      </div>
+
+
+      <!-- checkbox -->
+      <div class="mdc-form-field">
+        <div class="mdc-checkbox">
+          <input type="checkbox"
+                 class="mdc-checkbox__native-control"
+                 id="checkbox-1"/>
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark"
+                 viewBox="0 0 24 24">
+              <path class="mdc-checkbox__checkmark-path"
+                    fill="none"
+                    d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+            </svg>
+            <div class="mdc-checkbox__mixedmark"></div>
+          </div>
+          <div class="mdc-checkbox__ripple"></div>
+        </div>
+        <label for="checkbox-1">Checkbox 1</label>
+        <div class="mdc-checkbox">
+          <input type="checkbox"
+                 class="mdc-checkbox__native-control"
+                 id="checkbox-2"/>
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark"
+                 viewBox="0 0 24 24">
+              <path class="mdc-checkbox__checkmark-path"
+                    fill="none"
+                    d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+            </svg>
+            <div class="mdc-checkbox__mixedmark"></div>
+          </div>
+          <div class="mdc-checkbox__ripple"></div>
+        </div>
+        <label for="checkbox-2">Checkbox 2</label>
+      </div>
+
+
+      <!-- slider -->
+      <div class="mdc-slider mdc-slider--discrete">
+        <input class="mdc-slider__input" type="range" min="0" max="100" value="50" name="volume" step="10" aria-label="Discrete slider demo">
+        <div class="mdc-slider__track">
+          <div class="mdc-slider__track--inactive"></div>
+          <div class="mdc-slider__track--active">
+            <div class="mdc-slider__track--active_fill"></div>
+          </div>
+        </div>
+        <div class="mdc-slider__thumb">
+          <div class="mdc-slider__value-indicator-container" aria-hidden="true">
+            <div class="mdc-slider__value-indicator">
+              <span class="mdc-slider__value-indicator-text">
+                50
+              </span>
+            </div>
+          </div>
+          <div class="mdc-slider__thumb-knob"></div>
+        </div>
+      </div>
+
+
+      <!-- button -->
+      <div class="mdc-touch-target-wrapper">
+        <button class="mdc-button mdc-button--touch">
+          <span class="mdc-button__ripple"></span>
+          <span class="mdc-button__touch"></span>
+          <span class="mdc-button__label">My Accessible Button</span>
+        </button>
+      </div>
+
+    <script src="bundle.js" async></script>
+  </body>
+</html>

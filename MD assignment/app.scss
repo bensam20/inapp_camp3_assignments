@@ -1,0 +1,72 @@
+@use '@material/button/mdc-button';
+@use '@material/button';
+@use "@material/data-table/data-table";
+@use "@material/checkbox"; // Required only for data table with row selection.
+@use "@material/icon-button"; // Required only for data table with column sorting.
+@use "@material/dialog";
+@use "@material/image-list/mdc-image-list";
+@use "@material/image-list";
+@use "@material/list/mdc-list";
+@use "@material/menu-surface/mdc-menu-surface";
+@use "@material/menu/mdc-menu";
+@use "@material/top-app-bar/mdc-top-app-bar";
+@use "@material/icon-button/styles" as iconStyles;
+@use "@material/card";
+@use "@material/form-field";
+@use "@material/slider/styles";
+
+
+
+@include checkbox.core-styles;
+@include form-field.core-styles;
+
+
+
+
+.my-card-content {
+  padding: 16px;
+}
+
+.my-card {
+  height: 350px;
+  width: 350px;
+}
+
+
+.mdc-card--outlined{
+  margin-left: 50px;
+  height:100px;
+  width:350px;
+  color:black;
+  border-style: solid;
+  border-color: aquamarine;
+  box-shadow: 10px;
+}
+
+
+@include card.core-styles;
+.my-image-list {
+  @include image-list.standard-columns(5);
+}
+
+
+
+.foo-button {
+    @include button.container-fill-color(darksalmon);
+}
+  
+
+@include data-table.core-styles;
+@include data-table.theme-baseline;
+
+@include dialog.core-styles;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    color: blue;
+  }
